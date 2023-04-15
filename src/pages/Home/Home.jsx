@@ -11,12 +11,13 @@ import ServiceList from "../../services/ServiceList";
 import FeaturedTourList from "../../Featured-Tour/FeaturedTourList";
 import ImagesGallery from "../../components/Image-gallery/ImagesGallery";
 import Testimonial from "../../components/Testimonial/Testimonial";
+import NewsLetter from "../../shared/NewsLetter/NewsLetter";
 
 function Home() {
   return (
     <>
       {/* Intro --- */}
-      <section>
+      <section className="intro">
         <Container>
           <Row>
             <Col lg="6">
@@ -156,6 +157,8 @@ function Home() {
           </Row>
         </Container>
       </section>
+
+      <NewsLetter />
     </>
   );
 }

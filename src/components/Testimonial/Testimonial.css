@@ -1,0 +1,21 @@
+.testimonial {
+  padding: 40px;
+  border-bottom: 1px solid var(--secondary-color);
+  border-right: 1px solid var(--secondary-color);
+  border-radius: 0.5rem;
+}
+
+.testimonial .description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+  gap: 1rem;
+}
+
+.testimonial .description img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}

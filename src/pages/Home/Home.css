@@ -1,3 +1,10 @@
+/* === Intro === */
+
+.intro{
+  background: url('../../assets/images/globo.jpg'); 
+  background-position: center;
+  background-size: cover;
+}
 
 .hero_subtitle img {
   width: 2.5rem;

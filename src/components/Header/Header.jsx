@@ -1,4 +1,4 @@
-import React from "react";
+import {useRef, useEffect} from "react";
 import "./Header.css";
 import { NavLink, Link } from "react-router-dom";
 import { Container, Row, Button } from "reactstrap";
@@ -6,6 +6,23 @@ import logo from "../../assets/images/logo2.png";
 import {BiMenu} from 'react-icons/bi'
 
 function Header() {
+  const headerRef = useRef(null)
+
+  const stickHeaderFunc = () => {
+    window.addEventListener('scroll', ()=> {
+      if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+        headerRef.current.classList.add('sticky_header')
+      }else{
+        headerRef.current.classList.remove('sticky_header')
+      }
+    })
+  }
+
+  useEffect(()=> {
+stickHeaderFunc()
+return window.removeEventListener('scroll', stickHeaderFunc)
+  }, [])
+
   const nav_links = [
     {
       path: "/home",
@@ -21,8 +38,10 @@ function Header() {
     },
   ];
 
+
+
   return (
-    <header className="header">
+    <header className="header" ref={headerRef}>
       <Container className="container">
         <Row className="row">
           <div className="nav_wrapper ">
