@@ -4,6 +4,7 @@
 
 :root {
   --primary-color: #ff7e01;
+   /* --secondary-color: #df3131;  */
   --secondary-color: #faa935;
   --heading-color: #0b2727;
   --text-color: #6e7074;
@@ -21,7 +22,7 @@ body {
   font-family: var(--font-name);
   /* background: url('./assets/images/bg.jpg'); */
   /* background-position: center; */
-  background-size: cover;
+
   background-repeat: no-repeat;
   
 }
