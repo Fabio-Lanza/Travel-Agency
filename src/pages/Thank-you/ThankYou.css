@@ -1,0 +1,19 @@
+
+.thank_you-container{
+    background: url('../../assets/images/bg-crop.png');
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+
+.thank_you{
+    font-size: 4rem;
+    color: #0eb90e;
+    margin-bottom: 5rem;
+    
+}
+
+.thank_you h1{
+    font-size: 3.6rem;
+    font-family: var(--subtitle-font-name);
+}

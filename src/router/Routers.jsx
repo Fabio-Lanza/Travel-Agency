@@ -1,10 +1,11 @@
 import {Routes, Route, Navigate} from 'react-router-dom'
 import Home from '../pages/Home/Home'
-import Login from '../pages/Login'
+import Login from '../pages/Login/Login'
 import Register from '../pages/Register'
-import TourDetails from '../pages/TourDetails'
-import Tours from '../pages/Tours'
+import TourDetails from '../pages/Tour-Details/TourDetails'
+import Tours from '../pages/Tours/Tours'
 import SearchResultList from '../pages/SearchResultList'
+import ThankYou from './../pages/Thank-you/ThankYou';
 
 
 function Routers() {
@@ -17,6 +18,7 @@ function Routers() {
       <Route path='/tours/:id' element={<TourDetails/>}/>
       <Route path='/login' element={<Login />}/>
       <Route path='/register' element={<Register />}/>
+      <Route path='/thank-you' element={<ThankYou />}/>
       <Route path='/tours/search' element={<SearchResultList />}/>
     </Routes>
   )

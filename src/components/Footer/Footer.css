@@ -1,6 +1,5 @@
 .footer {
-  padding-top: 50px;
-  padding-bottom: 0px;
+  margin-top: 20px;
 }
 
 .footer .logo img {
@@ -42,9 +41,9 @@
 }
 
 .copyright {
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: center;
-  margin: 20px 0;
+  margin: 10px 0;
   color: var(--text-color);
 }
 
