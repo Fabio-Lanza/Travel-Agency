@@ -1,9 +1,6 @@
 
 .thank_you-container{
-    background: url('../../assets/images/bg-crop.png');
-    background-position: center;
-    background-size: cover;
-    height: 600px;
+    height: 650px;
 }
 
 .thank_you{

@@ -49,7 +49,7 @@ function Footer() {
           <Col lg="3">
             <div className="logo">
               <img src={logo} alt="" />
-              <p>Lorem ipsum dolor sit amet.</p>
+              
 
               <div className="social_links">
                 <span>
@@ -127,9 +127,9 @@ function Footer() {
                 </ListGroupItem>  
             </ListGroup>
           </Col>
-          <Col lg='12' className="copyright">
+          {/* <Col lg='12' className="copyright">
                   <p>Copyright{year}, Develop by <span>Fabio Lanza</span></p>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </footer>

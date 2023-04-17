@@ -1,13 +1,13 @@
 import {useState} from 'react'
-import './Login.css'
+import './Register.css'
 import { Container, Row, Col, Form, FormGroup, Button } from "reactstrap";
 import { Link } from 'react-router-dom'
-import loginImg from '../../assets/images/login.png'
+import registerImg from '../../assets/images/register.png'
 import userIcon from '../../assets/images/user.png'
 
-function Login() {
-
+function Register() {
   const [credentials, setCredentials] = useState({
+    userName:undefined,
     email:undefined,
     password: undefined,
   });
@@ -28,16 +28,25 @@ function Login() {
           <Col lg='8' className='m-auto'>
           <div className="login_container d-flex justify-content-between">
             <div className="login_img">
-              <img src={loginImg} alt="" />
+              <img src={registerImg} alt="" />
             </div>
 
             <div className="login_form">
               <div className="user">
                 <img src={userIcon} alt="" />
               </div>
-              <h2>Login</h2>
+              <h2>Register</h2>
 
               <Form onSubmit={handleClick}>
+                <FormGroup>
+                  <input 
+                  type="text" 
+                  placeholder='UserName' 
+                  id='userName' 
+                  required
+                  onChange={handleChange}/>
+                </FormGroup>
+
                 <FormGroup>
                   <input 
                   type="text" 
@@ -56,10 +65,10 @@ function Login() {
                   onChange={handleChange}/>
                 </FormGroup>
                 <button className='btn secondary__btn auth_btn' type='submit'>
-                  Login
+                  Create Account
                   </button>
               </Form>
-              <p>Don't have an account?<Link to='/register'>Create</Link></p>
+              <p>Already customer?<Link to='/login'>Login</Link></p>
             </div>
           </div>
           </Col>
@@ -69,4 +78,4 @@ function Login() {
   )
 }
 
-export default Login
+export default Register

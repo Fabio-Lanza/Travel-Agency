@@ -37,11 +37,11 @@ function Home() {
               </div>
             </Col>
 
-            <Col lg="2">
+            {/* <Col lg="2">
               <div className="hero_img-box">
                 <img src={heroImg} alt="" />
               </div>
-            </Col>
+            </Col> */}
 
             <Col lg="2">
               <div className="hero_img-box mt-4">

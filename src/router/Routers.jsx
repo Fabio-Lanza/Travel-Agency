@@ -1,7 +1,7 @@
 import {Routes, Route, Navigate} from 'react-router-dom'
 import Home from '../pages/Home/Home'
 import Login from '../pages/Login/Login'
-import Register from '../pages/Register'
+import Register from '../pages/Register/Register'
 import TourDetails from '../pages/Tour-Details/TourDetails'
 import Tours from '../pages/Tours/Tours'
 import SearchResultList from '../pages/SearchResultList'

@@ -1,5 +1,7 @@
 .footer {
   margin-top: 20px;
+  padding: 18px 0;
+  box-shadow: 3px -3px 10px #ddd;
 }
 
 .footer .logo img {
@@ -28,6 +30,9 @@
 .footer_link-title {
   color: var(--heading-color);
   margin-bottom: 1rem;
+}
+.footer_quick-links li{
+  background: transparent;
 }
 
 .footer_quick-links li a {
