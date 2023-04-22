@@ -5,12 +5,11 @@ import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 import "./Footer.css";
 import { FaFacebook, FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
-import { HiOutlineMail} from "react-icons/hi";
+import { HiOutlineMail } from "react-icons/hi";
 import { AiTwotonePhone } from "react-icons/ai";
 
 function Footer() {
-
-  const year = new Date().getFullYear()
+  const year = new Date().getFullYear();
 
   const quick_links = [
     {
@@ -29,10 +28,6 @@ function Footer() {
 
   const quick_links2 = [
     {
-      path: "/gallery",
-      display: "Gallery",
-    },
-    {
       path: "/login",
       display: "Login",
     },
@@ -49,7 +44,6 @@ function Footer() {
           <Col lg="3">
             <div className="logo">
               <img src={logo} alt="" />
-              
 
               <div className="social_links">
                 <span>
@@ -76,7 +70,7 @@ function Footer() {
             </div>
           </Col>
 
-          <Col lg="3">
+          <Col lg="3" className="discover">
             <h5 className="footer_link-title">Discover</h5>
             <ListGroup className="footer_quick-links">
               {quick_links.map((item, index) => (
@@ -87,7 +81,7 @@ function Footer() {
             </ListGroup>
           </Col>
 
-          <Col lg="3">
+          <Col lg="3" className="quick-container">
             <h5 className="footer_link-title">Quick Links</h5>
             <ListGroup className="footer_quick-links">
               {quick_links2.map((item, index) => (
@@ -98,33 +92,38 @@ function Footer() {
             </ListGroup>
           </Col>
 
-          <Col lg="3">
-          <h5 className="footer_link-title">Contact</h5>
+          <Col lg="3" className="contact">
+            <h5 className="footer_link-title">Contact</h5>
             <ListGroup className="footer_quick-links">
-            
-                <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
+              <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
                 <h6>
-                  <span><MdLocationOn /></span>
+                  <span>
+                    <MdLocationOn />
+                  </span>
                   Address:
                 </h6>
                 <p className="mb-0 ">Millbrae, California</p>
-                </ListGroupItem>
+              </ListGroupItem>
 
-                <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
+              <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
                 <h6>
-                  <span><HiOutlineMail /></span>
+                  <span>
+                    <HiOutlineMail />
+                  </span>
                   Email:
                 </h6>
                 <p className="mb-0 ">fabio.lanza4@gmail.com</p>
-                </ListGroupItem>
+              </ListGroupItem>
 
-                <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
+              <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
                 <h6>
-                  <span><AiTwotonePhone/></span>
+                  <span>
+                    <AiTwotonePhone />
+                  </span>
                   Phone:
                 </h6>
                 <p className="mb-0 ">(415)933-9439</p>
-                </ListGroupItem>  
+              </ListGroupItem>
             </ListGroup>
           </Col>
           {/* <Col lg='12' className="copyright">

@@ -7,6 +7,7 @@ import {BiMenu} from 'react-icons/bi'
 
 function Header() {
   const headerRef = useRef(null)
+  const menuRef = useRef(null)
 
   const stickHeaderFunc = () => {
     window.addEventListener('scroll', ()=> {
@@ -38,7 +39,9 @@ return window.removeEventListener('scroll', stickHeaderFunc)
     },
   ];
 
-
+const toggleMenu = () => {
+  menuRef.current.classList.toggle('show_menu')
+}
 
   return (
     <header className="header" ref={headerRef}>
@@ -49,7 +52,7 @@ return window.removeEventListener('scroll', stickHeaderFunc)
               <img src={logo} alt="" />
             </div>
 
-            <div className="navigation">
+            <div className="navigation" ref={menuRef} onClick={toggleMenu}>
               <ul className="menu d-flex align-items-center gap-5">
                 {nav_links.map((item, index) => (
                   <li className="nav_item" key={index}>
@@ -61,7 +64,7 @@ return window.removeEventListener('scroll', stickHeaderFunc)
               </ul>
             </div>
             <div className="nav_right d-flex align-items-center gap-4">
-              <div className="nav_btns d-flex align-items-center gap-4"></div>
+              <div className="nav_btn d-flex align-items-center gap-4"></div>
               <button className="btn secondary__btn">
                 <Link to={"/login"}>Login</Link>
               </button>
@@ -70,7 +73,7 @@ return window.removeEventListener('scroll', stickHeaderFunc)
               </button>
             </div>
 
-            <span className="mobile_menu">
+            <span className="mobile_menu" onClick={toggleMenu}>
             <BiMenu/>
             </span>
           </div>

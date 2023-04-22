@@ -7,12 +7,14 @@ import SearchBar from "./../../shared/SearchBar/SearchBar";
 import NewsLetter from "./../../shared/NewsLetter/NewsLetter";
 import { Container, Row, Col } from "reactstrap";
 
+
 function Tours() {
   const [pageCount, setPageCount] = useState(0);
   const [page, setPage] = useState(0);
 
+
   useEffect(() => {
-    const pages = Math.ceil(5 / 4); //Later we gonna use in the backend
+    const pages = Math.ceil(4 / 2); 
     setPageCount(pages);
   }, [page]);
 
@@ -23,7 +25,7 @@ function Tours() {
       <section>
         <Container>
           <Row>
-            <SearchBar />
+            {/* <SearchBar /> */}
           </Row>
         </Container>
       </section>
@@ -32,7 +34,7 @@ function Tours() {
         <Container>
           <Row className="mb-2">
             {tourData.map((tour) => (
-              <Col className="mb-4" lg="3" key={tour.id}>
+              <Col className="mb-4" lg="3" md='6' key={tour.id}>
                 {" "}
                 <TourCard tour={tour} />
               </Col>

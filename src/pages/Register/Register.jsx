@@ -1,5 +1,4 @@
 import {useState} from 'react'
-import './Register.css'
 import { Container, Row, Col, Form, FormGroup, Button } from "reactstrap";
 import { Link } from 'react-router-dom'
 import registerImg from '../../assets/images/register.png'

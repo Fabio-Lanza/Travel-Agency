@@ -40,10 +40,10 @@ function Testimonial() {
     <Slider {...setting}>
       <div className="testimonial">
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa
-          debitis, velit sed quos laborum pariatur vero necessitatibus
-          cupiditate, quod beatae corporis sunt unde exercitationem perspiciatis
-          ipsa facilis tenetur vel nostrum.
+        We are back from Peru and wanted to send you a sincere thank you
+         for helping us organize our trip.  
+         It was indeed the trip of a lifetime and we are so 
+         grateful and appreciative of the work you did to help make it so magical.  
         </p>
 
         <div className=" description">
@@ -57,10 +57,12 @@ function Testimonial() {
 
       <div className="testimonial">
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa
-          debitis, velit sed quos laborum pariatur vero necessitatibus
-          cupiditate, quod beatae corporis sunt unde exercitationem perspiciatis
-          ipsa facilis tenetur vel nostrum.
+        Just home from the wonderful trip you recommended 
+        to Australia with Linda SIm and David Tarrant. 
+        Not only was the trip mind blowing in it’s 
+        selection of gardens, hotels, meals ....oh the meals
+        !...but the group was collaborative and most
+         interesting being mainly from areas close to us
         </p>
         <div className="description">
           <img src={ava02} alt="" />
@@ -73,10 +75,11 @@ function Testimonial() {
 
       <div className="testimonial">
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa
-          debitis, velit sed quos laborum pariatur vero necessitatibus
-          cupiditate, quod beatae corporis sunt unde exercitationem perspiciatis
-          ipsa facilis tenetur vel nostrum.
+        I am so thankful you guys are my travel agents as 
+        I am to overwhelmed with everything else to shop 
+        for airplane tickets. You know you are much more 
+        than travel people. You are my friends, and that
+         means a great deal to me.
         </p>
         <div className="description">
           <img src={ava03} alt="" />

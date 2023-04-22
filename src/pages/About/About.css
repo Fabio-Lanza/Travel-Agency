@@ -1,0 +1,62 @@
+.about {
+  min-height: 70vh;
+  background: url("../../assets/images/bg-crop.png");
+  background-size: cover;
+}
+
+.about h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: var(--heading-color);
+  padding-top: 5rem;
+  padding-left: 7rem;
+}
+
+.about h1 span {
+  color: var(--secondary-color);
+}
+
+.about p {
+  width: 100%;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  line-height: 2.5rem;
+  padding: 2rem 7rem;
+  font-weight: 500;
+}
+
+.about h3 {
+  text-align: center;
+  margin-top: 60px;
+  font-family: var(--subtitle-font-name);
+  font-size: 2.2rem;
+}
+
+
+@media only screen and (max-width:480px){
+
+  .about{
+    background-position: center;
+  }
+  .about h1{
+    font-size: 2rem;
+    width: 100%;
+    padding-top: 3rem;
+    padding-left: 2rem;
+  }
+
+  .about p {
+    padding: 2rem;
+  }
+
+  
+.about h3 {
+  text-align: center;
+  margin: 0px 10px;
+  font-family: var(--subtitle-font-name);
+  font-size: 1.6rem;
+  padding-bottom: 45px;
+}
+}

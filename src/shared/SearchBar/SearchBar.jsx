@@ -4,21 +4,39 @@ import { BiMap } from "react-icons/bi";
 import { GoSearch } from "react-icons/go";
 import { RiGroupLine, RiMapPinTimeLine } from "react-icons/ri";
 import { useRef } from "react";
+import { BASE_URL } from "../../Utils/config";
+import { useNavigate } from "react-router-dom";
 
 function SearchBar() {
   const locationRef = useRef("");
   const distanceRef = useRef(0);
   const maxGroupSizeRef = useRef(0);
+  const navigate = useNavigate();
 
-  const searchHandle = () => {
+  const searchHandle = async () => {
     const location = locationRef.current.value;
     const distance = distanceRef.current.value;
     const maxGroupSize = maxGroupSizeRef.current.value;
 
-    if(location == '' || distance == '' || maxGroupSize == ''){
-      return alert("All fields are required")
+    if (location == "" || distance == "" || maxGroupSize == "") {
+      return alert("All fields are required");
     }
+
+    const res = await fetch(`${BASE_URL}/tours/search/getTourBySearch?
+    city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`);
+
+    // if (!res.okay){
+    //   alert("Something went wrong");
+    // } 
+
+    const result = await res.json();
+
+    navigate(
+      `/tours/search?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`,
+      { state: result.data }
+    );
   };
+
 
   return (
     <Col lg="12">

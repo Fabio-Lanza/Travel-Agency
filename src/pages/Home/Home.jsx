@@ -8,7 +8,7 @@ import experience from "../../assets/images/experienceTour.png";
 import Subtitle from "../../shared/Subtitle/Subtitle";
 import SearchBar from "../../shared/SearchBar/SearchBar";
 import ServiceList from "../../services/ServiceList";
-import FeaturedTourList from "../../Featured-Tour/FeaturedTourList";
+import FeaturedTourList from "../../components/Featured-Tour/FeaturedTourList";
 import ImagesGallery from "../../components/Image-gallery/ImagesGallery";
 import Testimonial from "../../components/Testimonial/Testimonial";
 import NewsLetter from "../../shared/NewsLetter/NewsLetter";
@@ -27,34 +27,22 @@ function Home() {
                   <img src={worldImg} alt="" />
                 </div>
                 <h1>
-                  Traveling opens the door to creating
+                  Traveling always brings you unforgettable
                   <span> memories</span>
                 </h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                  laborum esse voluptatem. Illum, eum amet.
+                  Discover new destinations and travel styles through our
+                  agency.
                 </p>
               </div>
             </Col>
 
-            {/* <Col lg="2">
-              <div className="hero_img-box">
-                <img src={heroImg} alt="" />
-              </div>
-            </Col> */}
-
-            <Col lg="2">
-              <div className="hero_img-box mt-4">
-                <video src={heroVideo} alt="" controls />
-              </div>
-            </Col>
-
-            <Col lg="2">
+            <Col lg="3">
               <div className="hero_img-box mt-5">
                 <img src={heroImg02} alt="" />
               </div>
             </Col>
-            <SearchBar />
+            {/* <SearchBar /> */}
           </Row>
         </Container>
       </section>
@@ -93,13 +81,11 @@ function Home() {
               <div className="experience_content">
                 <Subtitle subtitle={"Experience"} />
                 <h2>
-                  With our all experience <br /> we will serve you
+                  We are the world's most awarded & loved <br />
+                  travel company
                 </h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Atque, aspernatur? <br />
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Atque, aspernatur?
+                  We offer better travel experiences and value for travelers.
                 </p>
               </div>
               <div className="counter_wrapper d-flex align-items-center gap-5">
@@ -132,7 +118,7 @@ function Home() {
           <Row>
             <Col lg="12">
               <Subtitle subtitle={"Gallery"} />
-              <h2 className="gallery_title">Visit Our customer Tour Gallery</h2>
+              <h2 className="gallery_title">Our Tour Gallery</h2>
             </Col>
             <Col lg="12">
               <ImagesGallery />

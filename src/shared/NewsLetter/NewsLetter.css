@@ -2,7 +2,6 @@
 background: #cae5f4;
 padding: 40px 0;
 margin-top: 6rem;
-margin-bottom: -20px;
 }
 
 .newsletter_img img{
@@ -49,4 +48,20 @@ margin-bottom: -20px;
     background: var(--secondary-color);
     color: #fff;
     font-size: 1.1rem;
+}
+
+
+@media only screen and (max-width:480px){
+    .newsletter_content h2{
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .newsletter_img img{
+       display: none;
+    }
+
+    .newsletter_content p{
+        display: none;
+    }
 }

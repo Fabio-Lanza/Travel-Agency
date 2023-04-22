@@ -78,3 +78,21 @@ ul {
 .secondary__btn a:hover {
   color: inherit;
 }
+
+
+@media only screen and (max-width:480px){
+  .primary__btn a,
+  .secondary__btn a{
+    font-size: 0.8rem;
+  }
+
+  .primary__btn,
+  .secondary__btn,
+  .btn{
+    padding: 0.2rem 1rem !important;
+  }
+
+  section{
+    padding: 30px 0;
+  }
+}

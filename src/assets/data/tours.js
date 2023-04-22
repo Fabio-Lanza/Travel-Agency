@@ -19,7 +19,7 @@ const tours = [
     reviews: [
       {
         name: "jhon doe",
-        rating: 5,
+        rating: 5.0,
       },
     ],
     avgRating: 4.5,
@@ -32,13 +32,13 @@ const tours = [
     city: "Indonesia",
     distance: 400,
     address:"Somewhere in the world",
-    price: 99,
+    price: 198,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "this is where is the paradise",
     reviews: [
       {
         name: "jhon doe",
-        rating: 4.6,
+        rating: 4.8,
       },
     ],
     avgRating: 4.5,
@@ -51,13 +51,13 @@ const tours = [
     city: "Thailand",
     distance: 500,
     address:"Somewhere in the world",
-    price: 99,
+    price: 59,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "cheapest place in the world",
     reviews: [
       {
         name: "jhon doe",
-        rating: 4.6,
+        rating: 4.5,
       },
     ],
     avgRating: 4.5,
@@ -70,13 +70,13 @@ const tours = [
     city: "Thailand",
     distance: 500,
     address:"Somewhere in the world",
-    price: 99,
+    price: 109,
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
       {
         name: "jhon doe",
-        rating: 4.6,
+        rating: 4.1,
       },
     ],
     avgRating: 4.5,
@@ -89,13 +89,13 @@ const tours = [
     city: "Indonesia",
     distance: 500,
     address:"Somewhere in the world",
-    price: 99,
+    price: 205,
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
       {
         name: "jhon doe",
-        rating: 4.6,
+        rating: 4.9,
       },
     ],
     avgRating: 4.5,
@@ -108,13 +108,13 @@ const tours = [
     city: "Japan",
     distance: 500,
     address:"Somewhere in the world",
-    price: 99,
+    price: 310,
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
       {
         name: "jhon doe",
-        rating: 4.6,
+        rating: 4.1,
       },
     ],
     avgRating: 4.5,
@@ -127,13 +127,13 @@ const tours = [
     city: "France",
     distance: 500,
     address:"Somewhere in the world",
-    price: 99,
-    maxGroupSize: 8,
+    price: 405,
+    maxGroupSize: 5,
     desc: "this is the description",
     reviews: [
       {
         name: "jhon doe",
-        rating: 4.6,
+        rating: 3.6,
       },
     ],
     avgRating: 4.5,
@@ -146,13 +146,13 @@ const tours = [
     city: "Thailand",
     distance: 500,
     address:"Somewhere in the world",
-    price: 99,
+    price: 384,
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
       {
         name: "jhon doe",
-        rating: 4.6,
+        rating: 4.2,
       },
     ],
     avgRating: 4.5,

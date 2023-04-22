@@ -4,8 +4,9 @@ import Login from '../pages/Login/Login'
 import Register from '../pages/Register/Register'
 import TourDetails from '../pages/Tour-Details/TourDetails'
 import Tours from '../pages/Tours/Tours'
-import SearchResultList from '../pages/SearchResultList'
+import SearchResultList from '../pages/SearchResultList/SearchResultList'
 import ThankYou from './../pages/Thank-you/ThankYou';
+import About from './../pages/About/About';
 
 
 function Routers() {
@@ -14,6 +15,7 @@ function Routers() {
     <Routes>
       <Route path='/' element={<Navigate to='/home' />} />
       <Route path='/home' element={<Home />}/>
+      <Route path='/about' element={<About />}/>
       <Route path='/tours' element={<Tours />}/>
       <Route path='/tours/:id' element={<TourDetails/>}/>
       <Route path='/login' element={<Login />}/>
