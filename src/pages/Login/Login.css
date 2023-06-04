@@ -78,6 +78,17 @@
 }
 
 
+
+/* --Media query Laptop */
+@media only screen and (max-width:1350px){
+    .login_container{
+        width: 900px;
+        margin: 60px -30px;
+        min-height: 40vh;
+    }
+    }
+
+    
 @media only screen and (max-width:480px){
     .login_img{
         display: none;

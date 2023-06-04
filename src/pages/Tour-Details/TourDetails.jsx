@@ -162,7 +162,7 @@ function TourDetails() {
           </Row>
         </Container>
       </section>
-      {/* <NewsLetter /> */}
+      
     </>
   );
 }

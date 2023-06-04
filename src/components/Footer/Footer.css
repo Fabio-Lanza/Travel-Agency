@@ -60,6 +60,16 @@
   font-weight: 700;
 }
 
+
+/* --Media query Laptop */
+@media only screen and (max-width:1350px){
+  .footer_quick-links{
+    width: 400px;
+  }
+}
+
+
+
 @media only screen and (max-width: 480px) {
   .footer .logo {
     display: flex;

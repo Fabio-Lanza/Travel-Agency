@@ -1,6 +1,5 @@
 .section_subtitle{
     background: var(--secondary-color);
-    font-family: var(--subtitle-font-name);
     width: max-content;
     padding: 0.3rem 1rem;
     border-radius: 50px;

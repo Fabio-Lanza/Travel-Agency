@@ -81,7 +81,7 @@ function Footer() {
             </ListGroup>
           </Col>
 
-          <Col lg="3" className="quick-container">
+          <Col sm="1" lg="3" className="quick-container">
             <h5 className="footer_link-title">Quick Links</h5>
             <ListGroup className="footer_quick-links">
               {quick_links2.map((item, index) => (

@@ -52,7 +52,6 @@ padding-top: 3.5rem ;
     font-size: 2.1rem;
     font-weight: 500;
     color:#ee6e6e;
-    font-family: var(--subtitle-font-name);
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -142,6 +141,13 @@ font-weight: 500;
 
 }
 
+
+/* --Media query Laptop */
+@media only screen and (max-width:1350px){
+.intro{
+  width: 92%;
+}
+}
 
 @media only screen and (max-width:480px){
   .hero_content h1{
