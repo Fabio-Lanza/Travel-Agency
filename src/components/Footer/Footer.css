@@ -62,9 +62,12 @@
 
 
 /* --Media query Laptop */
-@media only screen and (max-width:1350px){
+@media only screen and (max-width:1400px){
   .footer_quick-links{
     width: 400px;
+  }
+  .footer{
+    padding-bottom: 20px;
   }
 }
 

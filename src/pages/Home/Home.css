@@ -143,7 +143,7 @@ font-weight: 500;
 
 
 /* --Media query Laptop */
-@media only screen and (max-width:1350px){
+@media only screen and (max-width:1400px){
 .intro{
   width: 92%;
 }
