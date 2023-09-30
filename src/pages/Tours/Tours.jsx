@@ -12,6 +12,12 @@ function Tours() {
   const [pageCount, setPageCount] = useState(0);
   const [page, setPage] = useState(0);
 
+  const scrollTop = () => {
+    window.scrollTo({ top: 0});
+  }
+  useEffect(() => {
+    scrollTop()
+  }, []);
 
   useEffect(() => {
     const pages = Math.ceil(4 / 2); 

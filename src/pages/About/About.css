@@ -1,7 +1,5 @@
 .about {
   min-height: 70vh;
-  background: url("../../assets/images/bg-crop.png");
-  background-size: cover;
 }
 
 .about h1 {
